@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>扫码观看视频</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #111;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    video {
+      width: 100%;
+      max-width: 900px;
+      max-height: 90vh;
+      border-radius: 8px;
+      background: #000;
+      outline: none;
+    }
+    .fallback {
+      color: #aaa;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 12px;
+    }
+    .fallback a { color: #4ea1ff; }
+  </style>
+</head>
+<body>
+  <div>
+    <video
+      controls
+      playsinline
+      webkit-playsinline
+      x5-playsinline
+      x5-video-player-type="h5"
+      preload="metadata"
+    >
+      <source
+        src="https://github.com/qjbywx/daily-quote/releases/download/%E5%8F%AE%E5%8F%AE%E5%8F%AE/11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.mp4"
+        type="video/mp4">
+      你的浏览器不支持 HTML5 视频播放。
+    </video>
+    <p class="fallback">
+      如果视频无法播放，可<a href="https://github.com/qjbywx/daily-quote/releases/download/%E5%8F%AE%E5%8F%AE%E5%8F%AE/11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.mp4">点击此处直接下载</a>
+    </p>
+  </div>
+</body>
+</html>
